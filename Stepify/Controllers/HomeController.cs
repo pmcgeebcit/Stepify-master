@@ -10,6 +10,7 @@ namespace Stepify.Controllers
 {
     public class HomeController : Controller
     {
+        // I added this.
         public IActionResult Index()
         {
             return View();
