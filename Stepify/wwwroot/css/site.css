@@ -1,0 +1,113 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding-top: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.main{
+    margin-top: 100px;
+}
+
+.banner {
+    width: 100%;
+    margin: auto;
+}
+
+.banner img{
+    margin: auto;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+.bs-example {
+    margin: 20px;
+}
+
+.panel-heading {
+    background-color: #337ab7 !important;
+    color: #fff !important;
+}
+
+.panel-title{
+    font-size: 22px !important;
+}
+.panel-title .glyphicon {
+    font-size: 20px;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .flex-row > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-row .thumbnail,
+    .flex-row .caption {
+        flex-direction: column;
+        display: flex;
+        flex: 1 0 auto;
+        height: auto;
+        position: relative;
+    }
+
+.flex-text {
+    flex-grow: 1;
+}
+
+.flex-row img {
+    min-width: 0;
+    width: 100%;
+}
+
+/* make gutter sizes consistent */
+.flex-row {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Extra Media Query Below for Retina Iphones and Smaller */
+@media only screen and (max-width : 480px) {
+    .flex-row > [class*='col-'] {
+        width: 100%;
+    }
+
+    .flex-row {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "CreateCourse";
+}
+
+<div class="container main">
+    <h2>Create Course</h2>
+    <div class="form-group">
+        <label for="coursetitle">Course Title</label>
+        <input type="text" class="form-control" id="coursetitle" placeholder="Title of Course" disabled>
+    </div>
+    <hr />
+    <hr />
+    <form>
+        <div class="form-group">
+            <label for="steptitle">Step Title</label>
+            <input type="text" class="form-control" id="steptitle" placeholder="Title of Step">
+        </div>
+        <hr />
+        <hr />
+        <div class="form-group">
+            <label for="stepdescription">Step Description</label>
+            <textarea type="textarea" class="form-control" id="stepdescription" placeholder="Description of Step"></textarea>
+        </div>
+        <hr />
+        <hr />
+        <div class="form-group" style="padding-bottom:15px;">
+            <label for="stepmedia">Upload Media</label>
+            <input type="file" id="stepmedia">
+            <p class="help-block">Add media to reinforce the step</p>
+        </div>
+        <hr />
+        <hr />
+        <a class="btn btn-primary btn-large" href="CreateCourse">Create Another Step</a>
+        <a class="btn btn-success btn-large" href="CourseSteps">Create Another Step</a>
+    </form>
+</div>
+
+
